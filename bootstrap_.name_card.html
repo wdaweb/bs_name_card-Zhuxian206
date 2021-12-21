@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>名片排版</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <style>
+    html,
+    body {
+      height: 100vh;
+      width: 100%;
+      color: rgb(59, 54, 48);
+    }
+
+    .bl, .tr {
+      display: none;
+      height: 200px;
+      width: 200px;
+      /* background-color: blue; */
+    }
+
+    .bl{
+      background-image: linear-gradient(-135deg, rgba(0,0,0,0) 50%, rgba(255,255,255, 1) 50%);
+      filter: drop-shadow(1px 1px 10px rgba(51, 51, 51, 0.5));
+    }
+
+    .tr{
+      background-image: linear-gradient(45deg, rgba(0,0,0,0) 50%, rgba(255,255,255, 1) 50%);
+      filter: drop-shadow(1px 1px 10px rgba(51, 51, 51, 0.5));
+    }
+
+    .box {
+      background-color: rgb(59, 54, 48);
+    }
+
+    .box2 {
+      background-color: rgb(154, 180, 182);
+    }
+    h1{
+      font-size: 3rem;
+    }
+    img{
+      width: 200px;
+      height: 200px;
+      filter: grayscale(100%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="p-md-5 vh-100 vw-100 shadow">
+    <div class="bl position-absolute d-none d-md-block bottom-0 start-0"></div>
+    <div class="tr position-absolute d-none d-md-block top-0 end-0"></div>
+    <div class="row m-0 h-100 w-100 py-1 px-1">
+      <div class="d-flex box col-12 col-md-4 align-items-center justify-content-center">
+        <img class="m-5" src="./images/ROC_Workforce_Development_logo.png" style="height: 200px; width: 200px;" >
+      </div>
+      <div class="box2 col-12 col-md-8 p-5 d-flex flex-column justify-content-center">
+        <h5>Font-End Designer</h5>
+        <h1>Zhu Xian</h1>
+        <h5>泰 山 職 訓 局</h5>
+        <p>
+          住址：新北市泰山區貴子里致遠新村55之1號<br>
+          電話：02-2901-8274<br>
+          E-Mail：ZhuXian@example.cc<br>
+          網站：http://www.zhuxian.example.cc/
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>
